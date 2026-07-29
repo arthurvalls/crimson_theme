@@ -3,9 +3,13 @@ return {
 	-- Active colorscheme: gruvbox (ellisonleao/gruvbox.nvim), see plugins/gruvbox.lua.
 	-- require("config.plugins.tokyodark"),
 	-- require("config.plugins.gruvbox"),
-	require("config.plugins.nord"),
+	-- require("config.plugins.nord"),
 	-- require("config.plugins.monokai"),
-	require("config.plugins.smear-cursor"),
+	--	require("config.plugins.e-ink"),
+	-- require("config.plugins.solarized-osaka"),
+	-- require("config.plugins.solarized"),
+	-- require("config.plugins.smear-cursor"),
+	require("config.plugins.rose-pine"),
 	require("config.plugins.stylua"),
 	require("config.plugins.multi"),
 	-- require("config.plugins.notify"), -- replaced by snacks.notifier
