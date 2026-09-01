@@ -41,6 +41,18 @@ return {
     },
     -- Lazy-load on first use instead of at startup (pulls 4 transitive deps).
     cmd = 'Neotree',
+    init = function()
+      -- `hijack_netrw_behavior` below only fires if neo-tree is already loaded
+      -- when the directory buffer is entered. `nvim <dir>` runs no Neotree
+      -- command and presses no key, so nothing triggers the lazy load. Load it
+      -- eagerly in that one case, and stay lazy for every other startup.
+      if vim.fn.argc(-1) == 1 then
+        local stat = vim.uv.fs_stat(vim.fn.argv(0))
+        if stat and stat.type == 'directory' then
+          require('neo-tree')
+        end
+      end
+    end,
     keys = {
       { '<leader>e', '<Cmd>Neotree reveal<CR>', desc = 'Neo-tree reveal' },
     },
