@@ -51,9 +51,9 @@ format = '[$time]($style)'
 # success_symbol = "[λ](bold green)" # λ
 # error_symbol = "[λ](bold red)"
 # vimcmd_symbol = "[λ](bold yellow)"
-success_symbol = "[::](bold green)" # λ
-error_symbol = "[::](bold red)"
-vimcmd_symbol = "[::](bold yellow)"
+success_symbol = "[->](bold green)" # λ
+error_symbol = "[->](bold red)"
+vimcmd_symbol = "[->](bold yellow)"
 
 
 # --- Language indicators (green, symbol only — no version, shown inside a matching project) ---

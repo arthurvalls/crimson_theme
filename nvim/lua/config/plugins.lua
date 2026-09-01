@@ -12,7 +12,8 @@ return {
 	-- require("config.plugins.rose-pine"),
 	-- require("config.plugins.github"),
 	-- require("config.plugins.darcula"),
-	require("config.plugins.gumshoe"),
+	-- require("config.plugins.gumshoe"),
+	require("config.plugins.kanagawa"),
 	require("config.plugins.stylua"),
 	require("config.plugins.multi"),
 	-- require("config.plugins.notify"), -- replaced by snacks.notifier
